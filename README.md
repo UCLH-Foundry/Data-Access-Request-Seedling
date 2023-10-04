@@ -21,6 +21,9 @@ The API needs the following manual environment vars set (In the Azure Portal -> 
 - `ADF_RESOURCE_GROUP`="name of the resource group containing the data factory"
 - `ADF_NAME`="name of the data factory"
 - `ADF_PIPELINE_NAME`="name of the data factory pipeline to trigger"
+- `FLOWEHR_NAME`="name of the FlowEHR deployment" // TODO: Add this to the FlowEHR build so it's set automatically
+
+If these are not set, the app will fall back to constructing these values via the `FLOWEHR_NAME`
 
 ### Setting Permissions in Test / Prod
 To give permissions for the DAR web app to trigger ADF pipelines, it needs permissions to the data factory deployed through FlowEHR.
