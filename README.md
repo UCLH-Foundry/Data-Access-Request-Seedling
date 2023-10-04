@@ -1,4 +1,10 @@
-# Data Access Request
+# Data Access Request Seedling
+
+This repo provides a template to accelerate the development of a custom data access request tool. It:
+- Allows a user with a 'Researcher' role to create new Data Access Requests
+- A user with 'DataManager' role can approve / reject that request
+- All changes are tracked in the item history
+- When approved, an ADF pipeline is triggered to provision the data
 
 ### Getting Started
 To get started, ensure you have the following tools installed and set up:
@@ -35,4 +41,3 @@ To give permissions for the DAR web app to trigger ADF pipelines, it needs permi
 - Review + Assign
 
 Now the identity that runs the data access request app has permission to trigger pipelines in ADF.
-# Data-Access-Request-Seedling
